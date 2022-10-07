@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // @tsconfig-recommended
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    // override
+    "moduleResolution": "node",
+    "outDir": "./",
+    "removeComments": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}

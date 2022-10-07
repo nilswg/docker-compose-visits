@@ -1,0 +1,16 @@
+{
+  "name": "nilswg-visits",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "node server/index.js",
+    "docker-build": "docker image rm nilswg/visits && docker build -t nilswg/visits .",
+    "docker-run": "docker run --rm -it -p 127.0.0.1:8081:8081/tcp nilswg/visits",
+    "docker-build-run": "npm run docker-build && npm run docker-run",
+    "docker-clean": "docker system prune -f && docker image rm visits-node-app",
+    "docker-compose-up": "docker-compose up"
+  },
+  "author": "nilson",
+  "license": "ISC"
+}
