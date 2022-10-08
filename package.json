@@ -9,7 +9,9 @@
     "docker-run": "docker run --rm -it -p 127.0.0.1:8081:8081/tcp nilswg/visits",
     "docker-build-run": "npm run docker-build && npm run docker-run",
     "docker-clean": "docker system prune -f && docker image rm visits-node-app",
-    "docker-compose-up": "docker-compose up"
+    "dkcp-up": "docker-compose up -d",
+    "dkcp-build-up": "docker-compose up --build -d",
+    "dkcp-down": "docker-compose down"
   },
   "author": "nilson",
   "license": "ISC"
